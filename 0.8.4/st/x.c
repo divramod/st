@@ -59,6 +59,7 @@ static void selpaste(const Arg *);
 static void swapcolors(const Arg *);
 static void alphaincrease(const Arg *);
 static void alphadecrease(const Arg *);
+static void alphatoggle(const Arg *);
 static void zoom(const Arg *);
 static void zoomabs(const Arg *);
 static void zoomreset(const Arg *);
@@ -306,13 +307,13 @@ numlock(const Arg *dummy)
 void
 alphatoggle(const Arg *dummy)
 {
-  opt_alpha_toogle = !opt_alpha_toogle;
-  if (opt_alpha_toogle) {
+  opt_alpha_toggle = !opt_alpha_toggle;
+  if (opt_alpha_toggle) {
     opt_alpha_new = 0.5;
   } else {
     opt_alpha_new = 1;
   }
-  xlkkoadcols();
+  xloadcols();
   redraw();
 }
 
