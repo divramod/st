@@ -1,0 +1,29 @@
+--- config.def.h	2020-10-18 09:36:00.209953147 +0200
++++ config.def.divramod.h	2020-10-18 12:46:57.819990834 +0200
+@@ -95,6 +95,26 @@
+ 
+ /* Terminal colors (16 first used in escape sequence) */
+ static const char *colorname[] = {
++	"black",    /*  0: black    */
++	"#DC143C",  /*  1: red      */
++	"#6B8E23",  /*  2: green    */
++	"#DAA520",  /*  3: yellow   */
++	"#FF8C00",  /*  4: orange     */
++	"#BEBEBE",  /*  5: web grey (strong)  */
++	"blue",     /*  6: blue     */
++	"white",    /*  7: white    */
++	"black",    /*  8: brblack  */
++	"#FFC0CB",  /*  9: brred    */
++	"#00FF00",  /* 10: brgreen  */
++	"#FAFAD2",  /* 11: Light Goldenrod */
++	"blue",     /* 12: brblue   */
++	"magenta",  /* 13: brmagenta*/
++	"#008000",  /* 14: web green   */
++	"#F5F5F5",  /* 15: light smoke (light) */
++};
++
++/* Terminal colors (16 first used in escape sequence) */
++static const char *slcolorname[] = {
+ 	/* solarized light */
+ 	"#eee8d5",  /*  0: black    */
+ 	"#dc322f",  /*  1: red      */

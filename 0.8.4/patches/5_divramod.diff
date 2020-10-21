@@ -1,0 +1,13 @@
+--- config.def.h	2020-10-18 12:48:02.119989945 +0200
++++ config.def.divramod.h	2020-10-18 12:51:14.739987282 +0200
+@@ -159,8 +159,8 @@
+  * Default colors (colorname index)
+  * foreground, background, cursor, reverse cursor
+  */
+-unsigned int defaultfg = 12;
+-unsigned int defaultbg = 8;
++unsigned int defaultfg = 0;
++unsigned int defaultbg = 7;
+ static unsigned int defaultcs = 14;
+ static unsigned int defaultrcs = 15;
+ 
