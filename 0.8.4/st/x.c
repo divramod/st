@@ -293,8 +293,10 @@ clippaste(const Arg *dummy)
 void
 selpaste(const Arg *dummy)
 {
-	XConvertSelection(xw.dpy, XA_PRIMARY, xsel.xtarget, XA_PRIMARY,
-			xw.win, CurrentTime);
+  XConvertSelection(xw.dpy, XA_PRIMARY, xsel.xtarget, XA_PRIMARY,
+      xw.win, CurrentTime);
+  /* system("notify-send 'hello'"); */
+  /* system("echo 'hello'"); */
 }
 
 void
